@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Endless Dev Debugger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="assets/endless.png" alt="Endless Logo">
+  <h1>Endless Dev Debugger</h1>
+</header>
+
+<main>
+
+  <section class="left">
+    <h2>Transaction JSON</h2>
+    <textarea id="jsonInput">
+{
+  "from": "0xabc",
+  "to": "0xdef",
+  "gasLimit": 200000,
+  "action": "deploy",
+  "validators": 18,
+  "networkLoad": "medium"
+}
+    </textarea>
+    <button id="analyzeBtn">Analyze Transaction</button>
+  </section>
+
+  <section class="right">
+    <h2>Analysis Result</h2>
+    <div id="result"></div>
+
+    <h3>Timeline</h3>
+    <div id="timeline"></div>
+
+    <h3>History</h3>
+    <div id="history"></div>
+  </section>
+
+</main>
+
+<footer>
+  Made by sa1 for Endless
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
